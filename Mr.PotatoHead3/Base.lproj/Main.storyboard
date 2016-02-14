@@ -135,9 +135,15 @@
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXc-v7-JWm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="hKC-oX-S0E"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ilu-Ud-kLa">
                                                                 <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Km-sw-p3k"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Ef-5Q9">
                                                                 <rect key="frame" x="0.0" y="82" width="51" height="31"/>
@@ -155,12 +161,21 @@
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-pK-rhQ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="boY-2L-xco"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7M-Vx-Rb2">
                                                                 <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="325-uQ-2ar"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8X-Aq-ABQ">
                                                                 <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="l8j-5H-NP4"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gml-1E-oMb">
                                                                 <rect key="frame" x="0.0" y="123" width="51" height="31"/>
@@ -192,6 +207,29 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="arms" destination="6Ud-sE-s40" id="3jX-YQ-c3K"/>
+                        <outlet property="body" destination="ksA-k0-dCk" id="b6k-cj-U81"/>
+                        <outlet property="button1" destination="zXc-v7-JWm" id="Fvd-HM-Gj6"/>
+                        <outlet property="button10" destination="VzP-cf-omo" id="Xxo-1J-4LA"/>
+                        <outlet property="button2" destination="ilu-Ud-kLa" id="YbP-QA-GHA"/>
+                        <outlet property="button3" destination="tdG-Ef-5Q9" id="BDN-No-o1d"/>
+                        <outlet property="button4" destination="75L-BZ-A1O" id="oEj-O9-slv"/>
+                        <outlet property="button5" destination="RBw-9j-eQj" id="PPP-8a-chU"/>
+                        <outlet property="button6" destination="iKy-pK-rhQ" id="ekR-aZ-OEG"/>
+                        <outlet property="button7" destination="X7M-Vx-Rb2" id="Jzc-6h-4TC"/>
+                        <outlet property="button8" destination="H8X-Aq-ABQ" id="peY-hU-aGs"/>
+                        <outlet property="button9" destination="gml-1E-oMb" id="CbG-rn-5Jx"/>
+                        <outlet property="ears" destination="7CQ-Xf-vSi" id="8an-8h-o4y"/>
+                        <outlet property="eyebrows" destination="UjM-Yr-bVr" id="ZlW-9E-mCR"/>
+                        <outlet property="eyes" destination="XOh-XX-yg7" id="AMx-aN-zP7"/>
+                        <outlet property="glasses" destination="vKG-Gi-g4n" id="Ouz-NQ-kWh"/>
+                        <outlet property="hat" destination="TZ4-Ud-Ajr" id="ePg-N7-yFQ"/>
+                        <outlet property="mouth" destination="cND-6O-lPE" id="Jhc-9o-0DO"/>
+                        <outlet property="mustache" destination="Hbc-WU-ndW" id="brx-6o-4Vp"/>
+                        <outlet property="nose" destination="53a-Vq-a7R" id="f9x-eg-ZgH"/>
+                        <outlet property="shoes" destination="df3-bC-xRV" id="hF0-dE-9Ii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
