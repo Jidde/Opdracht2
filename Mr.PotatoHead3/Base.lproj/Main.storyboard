@@ -147,12 +147,21 @@
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdG-Ef-5Q9">
                                                                 <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="MLe-eb-B7Q"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75L-BZ-A1O">
                                                                 <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="oQz-hp-JvA"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBw-9j-eQj">
                                                                 <rect key="frame" x="0.0" y="164" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="r2k-K6-rid"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -179,9 +188,15 @@
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gml-1E-oMb">
                                                                 <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="kiH-8t-WFm"/>
+                                                                </connections>
                                                             </switch>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VzP-cf-omo">
                                                                 <rect key="frame" x="0.0" y="164" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="showBodyParts:" destination="BYZ-38-t0r" eventType="valueChanged" id="XnP-lG-dch"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>

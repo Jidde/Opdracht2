@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // create imageview array and button array
+    
     var imageViewArray: [UIImageView] = []
     var buttonArray: [UISwitch] = []
     
@@ -39,7 +41,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // fill array with imageviews and with buttons
+        
         imageViewArray += [arms, ears, eyebrows, eyes, glasses, hat, mouth, mustache, nose, shoes]
         
         buttonArray += [button1, button2, button3, button4, button5, button6, button7, button8, button9, button10]
@@ -50,13 +54,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func showBodyParts(sender: AnyObject) {
+    // Switch-action to hide/show images
+    
+    @IBAction func showBodyParts(sender: UISwitch) {
         for (index, button) in buttonArray.enumerate(){
-            if button != button.enabled{
-                imageViewArray[index].hidden = true
+            if button.on{
+                imageViewArray[index].hidden = false
             }
             else{
-                imageViewArray[index].hidden = false
+                imageViewArray[index].hidden = true
             }
         }
     }
