@@ -10,10 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // create imageview array and button array
-    
+    // create imageview array    
     var imageViewArray: [UIImageView] = []
-    var buttonArray: [UISwitch] = []
     
     @IBOutlet weak var body: UIImageView!
     @IBOutlet weak var arms: UIImageView!
@@ -27,26 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var nose: UIImageView!
     @IBOutlet weak var shoes: UIImageView!
     
-    @IBOutlet weak var button1: UISwitch!
-    @IBOutlet weak var button2: UISwitch!
-    @IBOutlet weak var button3: UISwitch!
-    @IBOutlet weak var button4: UISwitch!
-    @IBOutlet weak var button5: UISwitch!
-    @IBOutlet weak var button6: UISwitch!
-    @IBOutlet weak var button7: UISwitch!
-    @IBOutlet weak var button8: UISwitch!
-    @IBOutlet weak var button9: UISwitch!
-    @IBOutlet weak var button10: UISwitch!
+    @IBOutlet var collection1: [UISwitch]!
+    @IBOutlet var collection2: [UISwitch]!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // fill array with imageviews and with buttons
-        
-        imageViewArray += [arms, ears, eyebrows, eyes, glasses, hat, mouth, mustache, nose, shoes]
-        
-        buttonArray += [button1, button2, button3, button4, button5, button6, button7, button8, button9, button10]
+        // fill array with imageviews
+       imageViewArray += [arms, ears, eyebrows, eyes, glasses, hat, mouth, mustache, nose, shoes]
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,13 +44,12 @@ class ViewController: UIViewController {
     // Switch-action to hide/show images
     
     @IBAction func showBodyParts(sender: UISwitch) {
-        for (index, button) in buttonArray.enumerate(){
-            if button.on{
-                imageViewArray[index].hidden = false
-            }
-            else{
-                imageViewArray[index].hidden = true
-            }
+        let index = sender.tag
+        if sender.on{
+            imageViewArray[index].hidden = false
+        }
+        else{
+            imageViewArray[index].hidden = true
         }
     }
 }
